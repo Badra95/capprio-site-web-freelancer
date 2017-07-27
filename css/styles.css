@@ -11,7 +11,7 @@
 /* General */
 
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -34,16 +34,18 @@ main, .header, .site-header, footer {
   max-width: calc(100% - 24px);
   margin: 0px auto 0;
   position: relative;
+  /*padding-left: 24px;*/
 }
 
 .nav-top ul {
   list-style: none;
-  /*text-align: right;*/
+  text-align: right;
 }
 
 .nav-top li {
   display: inline-block;
-  margin: 14px;
+  font-size: 18px;
+  margin: 24px 0 0 24px;
   color: #465065;
 }
 
@@ -74,7 +76,7 @@ a:hover {
 main a {
   color: #f0454c;
   text-transform: uppercase;
-  font-family: Open Sans ;
+  font-family: Open Sans;
 }
 
 .site-header {
@@ -106,6 +108,16 @@ h1, h2, h3 {
   text-transform: uppercase;
   color:#465065;
   position: relative;
+  margin-bottom: 0px;
+  font-size: 38px;
+}
+
+.page-footer h2 {
+  font-size: 30px;
+}
+
+.section1 h2, h3 {
+  font-size: 24px;
 }
 
 h2+p:first-line, h1+p {
@@ -137,33 +149,42 @@ main p {
   padding: 24px;
   margin-top: 24px;
   text-transform: uppercase;
-  /*letter-spacing: 1px;
-  font-weight: 900;*/
   transition: .5s;
   cursor: pointer;
 }
 
-.section-1, .section-2, .section-3{
+.section1, .section2 {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  margin: 24px 0;
+}
+
+.section3 {
+  display: flex;
+  /*justify-content: space-between;*/
   align-items: center;
   margin: 24px 0;
 }
 
-.section-1 article {
+.section1 article {
   padding: 24px;
 }
 
-.section-3 img {
+.article2-2 {
+  padding: 54px;
+}
+
+.section3 img {
   border-radius: 50%;
   margin: 0 24px;
-  box-shadow: inset 1em 1em 10em #000;
+  box-shadow: inset 0 0 20px #000;
 }
 
 .moreF {
-  /*background-color: red;*/
-  padding: 60px 0 60px 60px;
+  padding: 40px 0 40px 40px;
   text-align: right;
+  font-family: Open sans;
 }
 
 footer {
